@@ -1,0 +1,28 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 15, 3, 14};
+        int k = 17;
+        boolean found = false; 
+
+        for (int i = 0; i <4; i++) {
+            for (int j = 1; j < 4; j++) {
+                int a = arr[i];
+                int b = arr[j];
+
+                if (a + b == k) {
+                    System.out.println(a + "+" + b + "=" + k + "  True");
+                    found = true; 
+                    break; 
+                }
+            }
+            if (found) break; 
+        }
+
+        if (!found) {
+            System.out.println("False"); 
+        }
+    }
+}
